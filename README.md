@@ -120,7 +120,9 @@ aws configure
 
 ## Usage
 
-## How the Skills API Works Here
+### How the Skills API Works
+
+The AML Screening Agent uses a skills-based approach where the LLM dynamically activates specialized skills based on the screening requirements. Below is the flow:
 
 ```
 User Request → AmlController
@@ -159,6 +161,8 @@ User Request → AmlController
                     ↓
             AmlScreeningResponse returned to caller
 ```
+
+---
 
 ## API Reference
 
