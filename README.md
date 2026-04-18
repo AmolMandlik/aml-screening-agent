@@ -11,7 +11,7 @@
 - [API Reference](#api-reference)
 - [Testing](#testing)
 - [Contributing](#contributing)
-- [License](#license)
+- [Get In Touch](#get-in-touch)
 
 ## Description
 
@@ -133,26 +133,26 @@ User Request → AmlController
                     ↓
         ┌─────────────────────────────────────────────────────────┐
         │  LLM (Claude Sonnet 4 on AWS Bedrock)                   │
-        │                                                          │
+        │                                                         │
         │  [Only activate_skill is visible initially]             │
-        │                                                          │
+        │                                                         │
         │  1. activate_skill("kyc-parsing")                       │
         │     → SKILL.md instructions loaded into context         │
         │     → fetchKycDocumentText(), recordKycParsingResult()  │
-        │       now become visible                                 │
-        │                                                          │
+        │       now become visible                                │
+        │                                                         │
         │  2. activate_skill("sanctions-lookup")                  │
         │     → searchSanctionsList(), recordSanctionsResult()    │
-        │       become visible                                     │
-        │                                                          │
+        │       become visible                                    │
+        │                                                         │
         │  3. activate_skill("pep-screening")                     │
         │     → searchPepRegistry(), checkEddTriggers()           │
-        │       become visible                                     │
-        │                                                          │
+        │       become visible                                    │
+        │                                                         │
         │  4. activate_skill("graph-analysis")                    │
         │     → getRecentTransactions(), checkVelocity(),         │
-        │       recordGraphAnalysisResult() become visible         │
-        │                                                          │
+        │       recordGraphAnalysisResult() become visible        │
+        │                                                         │
         │  5. [IF risk >= 60 or HIGH sanctions/PEP hit]           │
         │     activate_skill("sar-generation")                    │
         │     → generateSarReferenceNumber(), storeSarReport()    │
@@ -192,6 +192,16 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+## Get In Touch
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+If you're interested in implementing this AML Screening Agent solution or any similar agentic AI-based compliance solutions for your organization, we'd love to hear from you!
+
+**Contact Information:**
+- **GitHub:** [@AmolMandlik](https://github.com/AmolMandlik)
+- **Email:** [mandlikamol550@gmail.com](mailto:mandlikamol550@gmail.com)
+
+Whether you need custom implementation, integration support, or want to discuss how agentic AI can revolutionize your compliance workflows, please feel free to connect. We're open to collaborations, consultations, and enterprise implementations.
+
+---
+
+**Let's build intelligent compliance solutions together!** 🚀
