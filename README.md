@@ -177,25 +177,6 @@ User Request → AmlController
 
 ## Testing
 
-### Quick Test (with seed data)
-
-```bash
-# 1. Upload a KYC PDF for a customer (customer 2 = VIKTOR BLACKMONEY)
-curl -X POST http://localhost:8080/api/v1/aml/customers/2/kyc-document \
-     -F "file=@/path/to/kyc.pdf"
-
-# 2. Run AML screening — should trigger ALL 5 skills + generate SAR
-curl -X POST http://localhost:8080/api/v1/aml/screen/2
-
-# 3. Run screening for a clean customer — should return CLEAR
-curl -X POST http://localhost:8080/api/v1/aml/screen/1
-
-# 4. Check SARs generated
-curl http://localhost:8080/api/v1/aml/sar/2
-
-# 5. Download SAR report
-curl http://localhost:8080/api/v1/aml/sar/download/SAR-2025-000001
-```
 
 ### Running Unit Tests
 ```bash
